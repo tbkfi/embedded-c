@@ -41,7 +41,7 @@ check_requirements() {
 
 flash() {
 	local EMBED_DEV="rp2040"
-	pyocd flash -t "$EMBED_DEV" build/MY_PROJECT.elf
+	pyocd flash -t "$EMBED_DEV" build/my_project.elf
 }
 
 if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then

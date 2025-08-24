@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Prefer bundled pico-sdk
-if [[ -d ./include/pico-sdk ]]; then
-	export PICO_SDK_PATH="$(realpath ./include/pico-sdk)"
+if [[ -d ./module/pico-sdk ]]; then
+	export PICO_SDK_PATH="$(realpath ./module/pico-sdk)"
 else
 	export PICO_SDK_PATH
 fi
