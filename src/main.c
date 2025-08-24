@@ -10,12 +10,12 @@ void init_led(uint PIN) {
 
 int main() {
 	stdio_init_all();
-	fprint("\n<BOOT>\n");
+	fprintf(stdout, "\n<BOOT>\n");
 	
 	init_led(P_LED1);
 
 	while (true) {
-		fprint("Blinking...\n");
+		fprintf(stdout, "Blinking...\n");
 		gpio_put(P_LED1, !gpio_get(P_LED1));
 		sleep_ms(500);
 	}
