@@ -40,6 +40,10 @@ Connecting to the open gdbserver can be done with the following commands:
  - `set architecture armv6-m`
  - `target remote localhost:3333`
 
+Reflash new build via active gdb-connection:
+ - `file build/my_project.elf`
+ - `load`
+
 ## License
 
 CC0 | No Rights Reserved
