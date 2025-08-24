@@ -47,7 +47,7 @@ flash() {
 if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
 	echo "[FLASH]"
 	echo -e "\n> VENV" && source_venv
-	echo -e "\n> TOOLS" && check_requirements "pyocd"
+	echo -e "\n> TOOLS" && check_requirements
 	echo -e "\n> FLASH" && flash
 
 	echo "DONE"
