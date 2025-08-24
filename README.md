@@ -29,7 +29,9 @@ Reason for using `pyOCD` is that it's easier to pull in via a venv, and doesn't 
 
 ### GDB
 
-Make sure your GDB is built with at least `multitarget xml` enabled.
+Make sure your GDB is built with at least `multitarget xml` enabled. You'll need multitarget to
+have the freedom to choose your target arch, otherwise you'll have to build the specific gdb binary separately.
+XML is required to properly parse communications when communicating with the target (e.g. stepping, break points, ...).
 
 Starting gdbserver can be done with `pyocd gdbserver --target rp2040`.
 
