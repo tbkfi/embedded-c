@@ -1,6 +1,6 @@
 # Embedded Template: C/C++
 
-An empty project template for C/C++ projects.
+An empty project template for embedded C/C++ projects.
 
 ## Usage
 
