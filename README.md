@@ -7,6 +7,8 @@ An empty project template for embedded C/C++ projects.
 You must have the appropriate toolchain installed to use the `build.sh` script. If ninja is installed, it will be used during build system generation.
 
 ```
+Run in order to initialise!
+
 1. setup.sh (initialise venv, requirements, and submodules)
 2. build.sh (generate build system, build the project)
 3. flash.sh (copy program to device)
@@ -43,6 +45,12 @@ Connecting to the open gdbserver can be done with the following commands:
 Reflash new build via active gdb-connection:
  - `file build/my_project.elf`
  - `load`
+
+## Why?
+
+A low threshold to get started on a project, and a reliable base to iterate on makes development easier to start and continue.
+As someone who prefers the CLI, and doesn't use heavier IDEs for programming (neovim btw), this was a simple way to create a relatively standard
+layout for interfacing with an embedded device while minimising the dependencies and unneeded middleware.
 
 ## License
 
